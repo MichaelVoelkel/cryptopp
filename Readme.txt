@@ -1,3 +1,12 @@
+Comment from MV (forker):
+If you would like to use with the Xcode generator, it seems to be necessary to add:
+
+set(USE_INTERMEDIATE_OBJECTS_TARGET OFF)
+
+to your CMakeLists.txt file because CMake XCode generator does not seem to be able to capture intermediate objects. This increases the build time a bit which is (for me at least) very low anyways.
+
+---
+
 Crypto++: free C++ Class Library of Cryptographic Schemes
 Version 8.3 - TBD
 
